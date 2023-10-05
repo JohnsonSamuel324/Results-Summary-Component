@@ -1,0 +1,27 @@
+.result-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-card {
+    margin: 1rem 2rem;
+}
+
+.section-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff6f5;
+    margin: 1rem 0rem;
+    padding: 0 1rem;
+    border-radius: 16px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
