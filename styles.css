@@ -203,4 +203,8 @@ html, body {
     #btn-continue {
         margin-top: 1rem;
     }
+    #btn-continue:hover {
+        background-image: linear-gradient(#4d22c9,#4734f0);
+        cursor: pointer;
+    }
 }
