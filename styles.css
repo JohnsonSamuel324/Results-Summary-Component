@@ -5,7 +5,6 @@
 }
 
 html, body {
-    min-height: 100%;
     overflow: hidden;
 }
 
@@ -40,6 +39,10 @@ html, body {
 #score h2 {
     color: #ffffff;
     font-size: 3rem;
+}
+
+#score p {
+    color: #bfb8ff;
 }
 
 .result-card h3 {
@@ -146,5 +149,58 @@ html, body {
         position: absolute;
         bottom: 0;
         width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        transform: translate(0, 50%);
+        width: clamp(650px, 60%, 700px);
+        background-color: white;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        box-shadow: 5px 5px 10px #dfe2f1;
+    }
+    .result-card {
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        background-color: #ffffff;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+    .result-card h1 {
+        font-size: 1.25rem;
+    }
+    #percentile-text {
+        margin: -1rem 3rem 2rem 4rem;
+    }
+    #score {
+        padding: 3rem;
+    }
+    #score h2 {
+        font-size: 4rem;
+    }
+    .summary-card {
+        margin: 0;
+        padding: 0 2rem 2rem 2rem;
+        z-index: -1;
+    }
+    .summary-card h1 {
+        margin-top: 1.5rem;
+    }
+    .section-score {
+        margin: 1rem 0;
+    }
+    #btn-continue {
+        margin-top: 1rem;
     }
 }
